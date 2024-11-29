@@ -1,0 +1,85 @@
+html , body{
+    width: 100%;
+    height:100%;
+}
+
+#map{
+    width: 100%;
+    height: 70%;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+.hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+.hero-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #00c6ff, #0072ff, #00c6ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: glow 3s infinite alternate ease-in-out;
+    position: relative;
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 10px #00c6ff, 0 0 20px #00c6ff, 0 0 30px #00c6ff;
+    }
+    100% {
+        text-shadow: 0 0 20px #0072ff, 0 0 40px #0072ff, 0 0 50px #0072ff;
+    }
+}
+
+.hero-subtitle {
+    margin-top: 10px;
+    font-size: 1.5rem;
+    opacity: 0.9;
+}
+
+.hero-cta {
+    margin-top: 20px;
+}
+
+.cta-button {
+    background: #0072ff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: transform 0.3s, background 0.3s, box-shadow 0.3s;
+}
+
+.cta-button:hover {
+    background: #00c6ff;
+    box-shadow: 0 0 10px #00c6ff, 0 0 20px #00c6ff;
+    transform: scale(1.1);
+}
+
+.cta-button.secondary {
+    background: transparent;
+    border: 2px solid #0072ff;
+}
+
+.cta-button.secondary:hover {
+    background: #0072ff;
+    color: white;
+}
